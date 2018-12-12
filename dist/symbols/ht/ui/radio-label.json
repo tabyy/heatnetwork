@@ -1,0 +1,107 @@
+{
+  "dataBindings": [
+    {
+      "attr": "ht.group",
+      "valueType": "String",
+      "name": "UIFormItemGroup"
+    },
+    {
+      "attr": "ht.value",
+      "valueType": "String",
+      "name": "UIFormItemValue"
+    },
+    {
+      "attr": "ht.label",
+      "valueType": "String",
+      "name": "UIText"
+    },
+    {
+      "attr": "ht.checked",
+      "valueType": "Boolean",
+      "name": "UIChecked"
+    },
+    {
+      "attr": "ht.disabled",
+      "valueType": "Boolean",
+      "name": "UIDisabled"
+    },
+    {
+      "attr": "ht.normalColor",
+      "valueType": "Color",
+      "name": "UINormalColor"
+    },
+    {
+      "attr": "ht.background",
+      "valueType": "Color",
+      "name": "UIBackground"
+    },
+    {
+      "attr": "ht.activeColor",
+      "valueType": "Color",
+      "name": "UIActiveColor"
+    },
+    {
+      "attr": "ht.onChange",
+      "valueType": "Function",
+      "defaultValue": "__ht__function(val, data, view) {\n\n}",
+      "name": "UIOnChange"
+    }
+  ],
+  "snapshotURL": "symbols/ht/snapshot/radio-label.json",
+  "onDown": "__ht__function(event, data, view, point, width, height) {\nht.vector.radioInteractor.onDown.apply(this, arguments);\n}",
+  "onUp": "__ht__function(event, data, view, point, width, height) {\nht.vector.radioInteractor.onUp.apply(this, arguments);\n}",
+  "onEnter": "__ht__function(event, data, view, point, width, height) {\nht.vector.radioInteractor.onEnter.apply(this, arguments);\n}",
+  "onLeave": "__ht__function(event, data, view, point, width, height) {\nht.vector.radioInteractor.onLeave.apply(this, arguments);\n}",
+  "width": 80,
+  "height": 20,
+  "boundExtend": 2,
+  "fitSize": true,
+  "interactive": true,
+  "disableSelectedBorder": true,
+  "pixelPerfect": false,
+  "comps": [
+    {
+      "type": "components/ht/ui/radio.json",
+      "displayName": "radio",
+      "rect": [
+        0,
+        2.5,
+        15,
+        15
+      ],
+      "disabled": {
+        "func": "attr@ht.disabled",
+        "value": false
+      },
+      "checked": {
+        "func": "attr@ht.checked",
+        "value": false
+      },
+      "normalColor": {
+        "func": "attr@ht.normalColor",
+        "value": "#737373"
+      },
+      "background": {
+        "func": "attr@ht.background",
+        "value": "rgb(255,255,255)"
+      },
+      "activeColor": {
+        "func": "attr@ht.activeColor",
+        "value": "rgb(51,153,255)"
+      }
+    },
+    {
+      "type": "text",
+      "text": {
+        "func": "attr@ht.label",
+        "value": "文本"
+      },
+      "rect": [
+        20,
+        0,
+        60,
+        20
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "dataBindings": [
+    {
+      "attr": "table.columns",
+      "valueType": "Object",
+      "name": "TableColumnDef"
+    },
+    {
+      "attr": "table.dataSource",
+      "valueType": "Object",
+      "name": "TableDataSource"
+    },
+    {
+      "attr": "table.body.height",
+      "valueType": "PositiveNumber",
+      "name": "TableBodyHeight"
+    },
+    {
+      "attr": "table.body.color",
+      "valueType": "Color",
+      "name": "TableBodyColor"
+    },
+    {
+      "attr": "table.cellPaddiing",
+      "valueType": "PositiveNumber",
+      "name": "TableCellPadding"
+    },
+    {
+      "attr": "table.translate.y",
+      "valueType": "Number",
+      "name": "TableTranslateY"
+    },
+    {
+      "attr": "table.rowLineWidth",
+      "valueType": "Int",
+      "defaultValue": 0
+    },
+    {
+      "attr": "table.rowLineColor",
+      "valueType": "Color"
+    }
+  ],
+  "onDown": "__ht__function(event, data, view, point, width, height) {\nvar index = data.a('table.hover.index');\nif (index !== null && index !== undefined){\nvar ds = data.a('table.dataSource');\nconsole.log(ds[index]);\n}\n}",
+  "onMove": "__ht__function(event, data, view, point, width, height) {\nvar cellHeight = data.a('table.body.height');\nvar ty = data.a('table.translate.y');\nvar hover = Math.floor((point.y - ty) / cellHeight);\nif (hover >=0) {\n    data.a('table.hover.index', hover);\n}\nelse {\n    data.a('table.hover.index', null);\n}\n}",
+  "onLeave": "__ht__function(event, data, view, point, width, height) {\ndata.a('table.hover.index', null);\n}",
+  "width": 500,
+  "height": 360,
+  "fitSize": true,
+  "scrollable": true,
+  "interactive": true,
+  "clip": true,
+  "comps": [
+    {
+      "type": "components/table/table.json",
+      "displayName": "tableComp",
+      "rotation": 6.28319,
+      "rect": [
+        0.00084,
+        -0.26419,
+        499.61877,
+        359.73516
+      ],
+      "columns": {
+        "func": "attr@table.columns",
+        "value": []
+      },
+      "dataSource": {
+        "func": "attr@table.dataSource",
+        "value": []
+      },
+      "tdBackground": null,
+      "borderWidth": 0,
+      "columnLineWidth": 0,
+      "rowLineColor": {
+        "func": "attr@table.rowLineColor",
+        "value": "rgb(212,212,212)"
+      },
+      "rowLineWidth": {
+        "func": "attr@table.rowLineWidth",
+        "value": 0
+      },
+      "tdHeight": {
+        "func": "attr@table.body.height",
+        "value": 27
+      },
+      "tdColor": {
+        "func": "attr@table.body.color",
+        "value": "rgb(33,33,33)"
+      },
+      "cellPadding": {
+        "func": "attr@table.cellPaddiing",
+        "value": 0
+      },
+      "showHead": false,
+      "translateY": {
+        "func": "attr@table.translate.y",
+        "value": 0
+      },
+      "hoverColor": "rgba(255,255,255,0.10)"
+    }
+  ]
+}

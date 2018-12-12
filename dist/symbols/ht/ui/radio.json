@@ -1,0 +1,85 @@
+{
+  "dataBindings": [
+    {
+      "attr": "ht.group",
+      "valueType": "String",
+      "name": "UIFormItemGroup"
+    },
+    {
+      "attr": "ht.value",
+      "valueType": "String",
+      "name": "UIFormItemValue"
+    },
+    {
+      "attr": "ht.checked",
+      "valueType": "Boolean",
+      "name": "UIChecked"
+    },
+    {
+      "attr": "ht.disabled",
+      "valueType": "Boolean",
+      "name": "UIDisabled"
+    },
+    {
+      "attr": "ht.normalColor",
+      "valueType": "Color",
+      "name": "UINormalColor"
+    },
+    {
+      "attr": "ht.background",
+      "valueType": "Color",
+      "name": "UIBackground"
+    },
+    {
+      "attr": "ht.activeColor",
+      "valueType": "Color",
+      "name": "UIActiveColor"
+    },
+    {
+      "attr": "ht.onChange",
+      "valueType": "Function",
+      "defaultValue": "__ht__function(val, data, view) {\n\n}",
+      "name": "UIOnChange"
+    }
+  ],
+  "snapshotURL": "symbols/ht/snapshot/radio.json",
+  "width": 16,
+  "height": 16,
+  "boundExtend": 2,
+  "fitSize": true,
+  "interactive": true,
+  "disableSelectedBorder": true,
+  "pixelPerfect": false,
+  "comps": [
+    {
+      "type": "components/ht/ui/radio.json",
+      "displayName": "radio",
+      "rect": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "disabled": {
+        "func": "attr@ht.disabled",
+        "value": false
+      },
+      "checked": {
+        "func": "attr@ht.checked",
+        "value": false
+      },
+      "normalColor": {
+        "func": "attr@ht.normalColor",
+        "value": "#737373"
+      },
+      "background": {
+        "func": "attr@ht.background",
+        "value": "rgb(255,255,255)"
+      },
+      "activeColor": {
+        "func": "attr@ht.activeColor",
+        "value": "rgb(51,153,255)"
+      }
+    }
+  ]
+}

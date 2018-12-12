@@ -1,0 +1,18 @@
+{
+  "modified": "Tue Nov 27 2018 13:58:33 GMT+0800 (中国标准时间)",
+  "width": 100,
+  "height": 100,
+  "comps": [
+    {
+      "type": "components/ht/ui/button.json",
+      "displayName": "button",
+      "rect": [
+        0,
+        0,
+        100,
+        38
+      ],
+      "text": ""
+    }
+  ]
+}

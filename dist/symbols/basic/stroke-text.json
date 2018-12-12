@@ -1,0 +1,61 @@
+{
+  "dataBindings": [
+    {
+      "attr": "text",
+      "valueType": "String",
+      "defaultValue": "text"
+    },
+    {
+      "attr": "font",
+      "valueType": "Font",
+      "defaultValue": "14px Arial"
+    },
+    {
+      "attr": "color",
+      "valueType": "Color"
+    },
+    {
+      "attr": "strokeColor",
+      "valueType": "Color"
+    },
+    {
+      "attr": "strokeWidth",
+      "valueType": "PositiveNumber"
+    }
+  ],
+  "width": 200,
+  "height": 50,
+  "fitSize": true,
+  "comps": [
+    {
+      "type": "components/textBox/strokeText.json",
+      "displayName": "strokeText",
+      "rect": [
+        0,
+        0,
+        200,
+        50
+      ],
+      "text": {
+        "func": "attr@text",
+        "value": "text"
+      },
+      "font": {
+        "func": "attr@font",
+        "value": "14px Arial"
+      },
+      "color": {
+        "func": "attr@color",
+        "value": "rgb(61,61,61)"
+      },
+      "strokeColor": {
+        "func": "attr@strokeColor",
+        "value": "#FEB64D"
+      },
+      "strokeWidth": {
+        "func": "attr@strokeWidth",
+        "value": 3
+      }
+    }
+  ]
+}

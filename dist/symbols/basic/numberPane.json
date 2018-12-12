@@ -1,0 +1,77 @@
+{
+  "modified": "Thu Oct 25 2018 16:15:01 GMT+0800 (中国标准时间)",
+  "dataBindings": [
+    {
+      "attr": "np.value",
+      "valueType": "Number"
+    },
+    {
+      "attr": "np.textAlign",
+      "valueType": "Align"
+    },
+    {
+      "attr": "np.gap",
+      "valueType": "PositiveNumber"
+    },
+    {
+      "attr": "np.color",
+      "valueType": "Color"
+    },
+    {
+      "attr": "np.digitCount",
+      "valueType": "PositiveNumber"
+    }
+  ],
+  "width": 200,
+  "height": 20,
+  "boundExtend": 20,
+  "fitSize": true,
+  "comps": [
+    {
+      "type": "components/numberPane.json",
+      "displayName": "numberPane",
+      "rect": [
+        0,
+        0,
+        200,
+        20
+      ],
+      "imgMap": {
+        "45": "symbols/图标电子表数字/-.json",
+        "46": "symbols/图标电子表数字/p.json",
+        "48": "symbols/图标电子表数字/0.json",
+        "49": "symbols/图标电子表数字/1.json",
+        "50": "symbols/图标电子表数字/2.json",
+        "51": "symbols/图标电子表数字/3.json",
+        "52": "symbols/图标电子表数字/4.json",
+        "53": "symbols/图标电子表数字/5.json",
+        "54": "symbols/图标电子表数字/6.json",
+        "55": "symbols/图标电子表数字/7.json",
+        "56": "symbols/图标电子表数字/8.json",
+        "57": "symbols/图标电子表数字/9.json",
+        "58": "symbols/图标电子表数字/colon.json",
+        "8451": "symbols/图标电子表数字/℃.json"
+      },
+      "value": {
+        "func": "attr@np.value",
+        "value": "123"
+      },
+      "textAlign": {
+        "func": "attr@np.textAlign",
+        "value": "center"
+      },
+      "gap": {
+        "func": "attr@np.gap",
+        "value": 2
+      },
+      "color": {
+        "func": "attr@np.color",
+        "value": "#32D3EB"
+      },
+      "digitCount": {
+        "func": "attr@np.digitCount",
+        "value": 0
+      }
+    }
+  ]
+}
